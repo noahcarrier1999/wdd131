@@ -7,14 +7,19 @@
     <meta name="author" content="Noah Carrier">
     <title>Coolpics</title>
     <link rel="stylesheet" href="coolpics.css">
-    <script src="coolpics.js"></script>
+    <script src="./coolpics.js" defer></script>
 </head>
 <body>
+    <div class="viewer hide">
+        <button class="close-viewer">X</button>
+        <img class="mainImage" src="./images/norris-full.jpeg" alt="alt desctiption">
+    </div>
     <header>
         <div class="titleDiv">
             <h1>Cool Pics📸</h1>
         </div>
-        <div class="navLinksDiv">
+        <button class="menuButton">Menu</button>
+        <div class="navLinksDiv hide">
             <a href="index.html">Home</a>
             <a href="index.html">People</a>
             <a href="index.html">Places</a>
