@@ -60,11 +60,17 @@ header h1{
     flex-direction: column;
 }
 
+.tag-container{
+    display: flex;
+    gap:10px
+}
+
 .recipe-info .tag{
     border: solid black 1px;
-    width: 60px;
+    width: 80px;
     margin-bottom: 20px;
     text-align: center;
+    
     font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
 
