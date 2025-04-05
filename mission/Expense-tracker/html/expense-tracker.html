@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Noah Carrier">
+    <meta name="description" content="This is an application that helps the user track their expenses to help them budget">
+    <title>Expense Tracker</title>
+    <link href="../styles/Expense-tracker.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../images/Black White Minimal Simple Modern Creative Studio Ego Logo.png" alt="logo">
+        <nav>
+            <a href="./expense-tracker-home.html">Home</a>
+            <a href="./expense-tracker.html">Expense Tracker</a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="main-content">
+            <p>Welcome to Your Expense Tracker! Managing your finances has never been easier. With this simple and intuitive tool, you can track your income and expenses, gain insights into your spending habits, and take control of your financial future. Whether you're saving for something special, trying to cut unnecessary costs, or just want a clearer picture of your budget, this tracker is here to help. Start by adding your transactions, and watch as your balance updates in real time—giving you the confidence to make smart financial decisions. Let’s build better money habits together!</p>
+        </div>
+
+        <div class="input-form">
+            <form class="form-fields">
+                <div class="expense-name">
+                    <label for="expense-name">Expense Name</label>
+                    <input type="text" id="expense-name" name="expense-name">
+                </div>
+                <div class="expense-amount">
+                    <label for="expense-amount">Expense Amount</label>
+                    <input type="text" id="expense-amount" name="expense-amount">
+                </div>
+                <button class="submit-button">Submit</button>
+            </form>
+        </div>
+        <div class="expense-container" id="expense-container">
+    
+        </div>
+        <div class="total-display" id="total-display">
+            Total: $0.00
+        </div>
+    </main>
+</body>
+</html>

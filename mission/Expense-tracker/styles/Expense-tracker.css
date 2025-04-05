@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: #fefae0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    display: flex;
+    background-color: #dda15e;
+    padding:5px;
+    gap:20px;
+    max-height: 100px;
+}
+
+.logo{
+    width: 70px;
+    margin:10px;
+}
+
+nav{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-family:"Ubuntu";
+}
+
+a{
+    color: #fefae0;
+    font-size: 20px;
+}
+
+.hero-banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    display: block;
+
+}
+
+.hero-text{
+    position: absolute;
+    top:35%;
+    left:5%;
+    font-family: "Montserrat", sans-serif;
+    color:#fefae0;
+    width: 200px;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+
+p{
+    background-color: #606c38;
+    color:#fefae0;
+    padding: 20px;
+    margin:40px;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Expense Tracker Page */
+
+.input-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-fields{
+    display: flex;
+}
+
+.expense-name{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.expense-amount{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.delete-btn{
+    background: none;
+    border: none;
+    color:#000;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.submit-button{
+    height: 35px;
+    justify-self: center;
+    align-self: center;
+    width: 70px;
+    background-color:#606c38;
+    color: white
+    
+
+}
+
+label{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+}
+
+.expense{
+    display: flex;
+    justify-content: space-around;
+    background-color: #dda15e;
+    margin:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.total-display{
+    font-family: "Ubuntu";
+    font-weight: bolder;
+    justify-self: center;
+    padding:20px;
+}
+
+
+@media (min-width:1024px) {
+    .hero-banner {
+        height: 600px; /* increase the height for larger screens */
+      }
+    
+    .hero-text {
+        top: 50%; /* adjust vertical positioning */
+        font-size: 70px; /* scale up the font */
+        width: 400px; /* more width for longer text lines */
+      }
+
+    .main-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        width: 900px;
+    }
+
+    .expense{
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+}
